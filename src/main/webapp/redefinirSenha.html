@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redefinir senha</title>
+    <link rel="stylesheet" href="css/redefinirSenha.css">
+
+</head>
+<body>
+    <main>
+        <div class="container">
+            <form id="enviaEmail" class="box1">
+                <h1 class="margem1"> Care Móveis </h1>
+                <h2 class="margem"> Redefinir senha: </h2>
+                
+                <label for="email" class="margem"> Email </label>
+                <input type="email" name="email" placeholder="Insira o email da conta"/>
+                <br>
+                <button id="enviaCodigo" type="submit"> Enviar codigo </button>
+            </form>
+
+            <form id="recebeCodigo" style="display: none;" class="box2" method="post" action="redefinirSenha" >
+                <h1 class="margem1"> Care Móveis </h1>
+                <p>Redefinir senha:</p>
+                <br>
+                <div class ="margem1">
+                    <i>Um email foi enviado para ........@gmail.com</i>
+                </div>
+                <br><br>
+                <label for="codigo" name="codigo">Código:</label>
+                <br>
+                <input type="text" id="codigo" name="codigo"  placeholder="Digite o código">
+                <br>
+                <br>
+                
+                <label for="senha" name="senha">Senha:</label>
+                <br>
+                <input type="password" id="senha" name="senha" placeholder="Digite a nova senha">
+                <br>
+                <br>
+                
+                <label for="confirmaSenha" name="confirmaSenha">Confirme a nova senha:</label>
+                <input type="password" id="confirmaSenha" name="confirmaSenha" placeholder="Confirme a nova senha">
+                <br>
+                <br>
+                
+                <button type="submit">Redefinir</button>
+            </form>
+        </div>
+    </main>
+    <script>
+        /* 
+    Essa é só uma das dezenas de formas de fazer isso, e não é a melhor,
+    a longo prazo eu recomento você ultizar algum framework.
+    Os frameworks vão simplificar o código e permitir mais funcionalidade,
+    Nós veremos mais a frente o uso do Ajax que pode ajudar nesse tipo de problema.
+        */
+
+        //busca o botão que envia o código para o e-mail e adicionar a função nele.
+        document.querySelector("#enviaCodigo").addEventListener("click", mudaTela)
+
+        //Função responsavel por mudar o formulário
+        function mudaTela(e){
+            //Você deve fazer o código de envio de email nessa função
+            //Isso impede que o formulário seja enviado
+            e.preventDefault()
+            //Faz sumir o formulário de envio de código
+            document.querySelector("#enviaEmail").style.display = "none"
+            //Faz aparecer o formulário de mudança de senha
+            document.querySelector("#recebeCodigo").style.display = "block"
+        }
+
+        //Atenção: isso é só um exemplo eu recomendo buscar outras alternativas melhores para um sistema maior.
+    </script>
+</body>
+</html>

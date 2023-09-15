@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+}
+form{
+    padding: 15px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    
+}
+
+input{
+    height: 20px; 
+    width: 200px;
+}
+input{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+main{
+    background-color: #774936;
+}
+footer{
+    border: 2px solid #3c0000;
+    background-color: #3c0000;
+}
+fieldset{
+    border: 2px solid #3c0000;
+    padding: 15px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #d69f7e;
+    text-align: center;
+}
+
+header{
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #d69f7e;
+    padding: 15px;
+}
+button{
+    padding: 10px;  
+    border-radius: 10px;
+    border: none; 
+    cursor: pointer; 
+    font-size: 15px;
+    text-align: center;
+    background-color: #255f85;    
+}
+
+h2{
+    color: #d69f7e;
+}
+
+/* @media screen and (max-width: 768px) {
+    .contato {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contato {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        width: 100%;
+    }
+
+    label {
+        font-size: 14px;
+    }
+} */

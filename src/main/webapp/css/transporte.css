@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+h2{
+    text-align: center;
+    padding: 20px;
+}
+.formulario{   
+    padding: 10px;
+    width: 40% ;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #d69f7e;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+}
+
+.linha{
+    display: inline-block;
+}
+
+.adicionar{
+    text-align: right;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.divDoBotao{
+    text-align: center;
+}
+header{
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #d69f7e;
+    padding: 15px;
+}
+footer{
+    background-color: #3c0000;
+}
+button{
+    padding: 10px;  
+    border-radius: 10px;
+    border: none; 
+    cursor: pointer; 
+    font-size: 15px;
+    text-align: center;
+    background-color: #255f85;    
+}
+fieldset{
+    border: 2px solid #3c0000;
+    padding: 15px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    font-weight: bold;
+   
+}
+form {
+    padding: 15px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    
+}
+input{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+main{
+    background-color: #774936;
+    align-items: center;
+}

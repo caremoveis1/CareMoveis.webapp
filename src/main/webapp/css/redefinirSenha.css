@@ -1,0 +1,76 @@
+/* Seu css tem problemas de responsividade, cuidado a longo prazo isso pode ser um grande problema */
+
+form{
+    padding: 10px;
+    border-radius: 5px;
+    border: 5px solid;
+    height: 350px;
+    width: 300px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:  #050609;
+    color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+input{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+label{
+    font-size: 20px;
+}
+
+.margem{
+    margin-bottom: 10px;
+}
+
+button{
+    margin-top: 10px;
+    padding: 3px;
+    
+}
+
+.box1{
+    padding: 25px;
+    border: 1px solid #3c0000;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+}
+
+.box2{
+    padding: 25px;
+    border: 1px solid #3c0000;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    width: 300px;
+    height: 520px;
+    
+}
+body{
+    background-image: linear-gradient(45deg, #255f85,  #d69f7e);
+}
+
+button{
+    padding: 10px;  
+    border-radius: 10px; 
+    cursor: pointer; 
+    text-align: center;
+    background-color: #255f85; 
+    border: none;  
+    font-weight: bold;
+}

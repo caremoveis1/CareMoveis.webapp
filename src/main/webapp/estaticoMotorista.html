@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estaticoMotorista.css">
+  <title>Motorista</title>
+</head>
+
+<body>
+  <header>
+    <h1>Como fazer parte da empresa empresa?</h1>
+    <div class="botoes">
+      <button>Login</button>
+      <button>Cadastro</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="caixa" id="box1">
+      <img src="imagens/caminhaoAzul.png" alt="Imagem de um caminhão">
+    </div>
+
+    <div class="caixa" style="display: none;" id="box2">
+      <img src="imagens/delivery.png" alt="Após o seu cadastro, sera enviado uma confirmação de contratação">
+      </p>
+    </div>
+
+    <div class="caixa" id="box1">
+      <p> Somos uma empresa dedicada ao transporte de móveis e eletrodomésticos,
+        oferecendo oportunidades empolgantes para motoristas 
+        como você. Nosso foco é proporcionar uma experiência 
+        satisfatória a você como motorista e aos nossos clientes.
+    </div>
+    <div class="caixa" style="display: none;" id="box2">
+      <p> Faça o seu cadastro e venha participar da familia Care você também.
+      </p>
+    </div>
+
+    <div class="caixa" id="box1">
+      <p>Venha dirigir para nós. <br> Após o seu cadastro, sera enviado uma confirmação de contratação e algumas explicações de como irá ocorrer as entregas.</p>
+    </div>
+    <div class="caixa" style="display: none;" id="box2">
+      <p> Após o seu cadastro, sera enviado uma confirmação de contratação e algumas explicações de como irá ocorrer as entregas.</p>
+    </div>
+  </main>
+  <footer>
+    <p>CareMóveis &copy;</p>
+  </footer>
+  
+  <script>
+
+      document.querySelector("#box1").addEventListener("mouseover", mudarBox)
+      document.querySelector("#box2").addEventListener("mouseout", voltarBox)
+      
+
+      function mudarBox(){
+          this.style.display = "none"
+          document.querySelector("#box2").style.display = "block"
+      }
+      function voltarBox(e){
+          this.style.display = "none"
+          document.querySelector("#box1").style.display = "block"
+      }
+      
+  </script>
+</body>
+
+</html>

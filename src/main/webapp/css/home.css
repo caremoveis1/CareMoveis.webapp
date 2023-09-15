@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+.direita{
+    display: flex;
+    gap: 10px;
+}
+
+.titulo{
+    margin: 0;
+    margin-left: 100px;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.caixa {
+    width: 50%; 
+    padding: 20px;
+    border: 2px solid #3c0000;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 10px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #255f85;
+}
+
+.caixa2 {
+    position: relative;
+    width: 50%;
+    height: 100vh; 
+    padding: 20px;
+    border: 2px solid #3c0000;
+    border-radius: 10px; 
+    box-sizing: border-box;
+    text-align: center; 
+    margin: 10px; 
+    background-color: #774936;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    border: 2px solid #3c0000;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px; 
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+button{
+    padding: 10px 20px;  
+    border-radius: 20px; 
+    cursor: pointer; 
+    font-size: 15px;
+    text-align: center;
+    background-color: #255f85;    
+}
+
+.button1{
+    position: absolute;
+    align-items: flex-end;
+    justify-content: flex-start;
+    bottom: 0;
+}
+.button2{
+    position: absolute;
+    justify-content: flex-start;
+    bottom: 0;
+    margin-left: 22vh;
+}
+
+header{
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #d69f7e;
+    padding: 15px;
+}
+
+h2{
+    font-size: 50px;
+}
+

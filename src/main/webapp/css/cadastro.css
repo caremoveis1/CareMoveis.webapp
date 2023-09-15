@@ -1,0 +1,108 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    background-color: #774936;
+}
+
+fieldset{
+    border: 2px solid #3c0000;
+    padding: 15px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    font-weight: bold;
+   
+}
+form {
+    padding: 15px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    
+}
+
+input{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+header{
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #d69f7e;
+    padding: 15px;
+}
+.tabs{
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #d69f7e;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+   
+}
+.tab {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.tab.active {
+    background-color: #255f85;
+    cursor: pointer; 
+}
+
+.form {
+    display: none;
+}
+
+.form.active {
+    display: block;
+}
+
+.chassi_ano{
+    display: inline-block;
+}
+.formulario {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+footer{
+    border: 2px solid #3c0000;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px; 
+    text-align: center;
+    background-color: #3c0000;
+}
+
+button{
+    padding: 10px;  
+    border-radius: 10px;
+    border: none; 
+    cursor: pointer; 
+    font-size: 15px;
+    text-align: center;
+    background-color: #255f85;    
+}
+
+@media screen and (max-width: 768px) {
+    .formulario {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .formulario {
+        max-width: 100%;
+    }
+    
+    .tab {
+        padding: 8px 16px;
+    }
+}

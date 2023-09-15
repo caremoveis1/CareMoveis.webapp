@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Transporte</title>
+        <link rel="stylesheet" href="css/transporte.css">
+    </head>
+    <body>
+        <header>
+            <h1>CareMóveis</h1>
+        </header>
+        <main>
+            <h2>Dados do Transporte</h2>
+            <form action="transporte" method="post" class="formulario">
+                <fieldset id="meuFieldset">
+                    <legend>Endereços</legend>
+
+                    <fieldset id="meuFieldset">
+                        <legend>Retirada</legend>
+
+                        <label name="cep" for="cep" class="linha">CEP: </label>
+                        <input id="cep" type="number" name="cep" class="linha">
+
+                        <br>
+
+                        <label name="rua" for="rua" class="linha">Logradouro: </label>
+                        <input id="rua" type="text" name="rua" class="linha">
+
+                        <br>
+
+                        <label name="num" for="num" class="linha">Nº: </label>
+                        <input id="num" type="number" name="num" class="linha">
+
+                        <label name="compl" for="compl" class="linha">Compl:</label>
+                        <input id="compl" type="text" name="compl" class="linha">
+
+                        <br>
+
+                        <label name="cidade" for="cidade" class="linha">Cidade: </label>
+                        <input id="cidade" type="text" name="cidade" class="linha">
+
+                        <label name="uf" for="uf" class="linha">Estado/UF: </label>
+                        <input id="uf" type="text" maxlength="2" size="2" name="uf" class="linha">
+                    </fieldset>
+
+                    <fieldset id="meuFieldset">
+                        <legend>Entrega</legend>
+
+                        <label name="cep2" for="cep2" class="linha">CEP: </label>
+                        <input id="cep2" type="number" name="cep2" class="linha">
+
+                        <br>
+
+                        <label name="rua2" for="rua2" class="linha">Logradouro: </label>
+                        <input id="rua2" type="text" name="rua2" class="linha">
+
+                        <br>
+
+                        <label name="num2" for="num2" class="linha">Nº: </label>
+                        <input id="num2" type="number" name="num2" class="linha">
+
+                        <label name="compl2" for="compl2" class="linha">Compl:</label>
+                        <input id="compl2" type="text" name="compl2" class="linha" class="linha">
+
+                        <br>
+
+                        <label name="cidade2" for="cidade2" class="linha">Cidade: </label>
+                        <input id="cidade2" type="text" name="cidade2" class="linha">
+
+                        <label name="uf2" for="uf2" class="linha">Estado/UF: </label>
+                        <input id="uf2" type="text" maxlength="2" size="2" name="uf2" class="linha">
+                    </fieldset>
+                </fieldset>
+
+                <fieldset id="meuFieldset">
+                    <legend>Dados do Móvel</legend>
+
+                    <fieldset>
+                        <label name="categ" for="categ" class="linha">Categoria: </label>
+                        <input id="categ" type="text" name="categ" class="linha">
+
+                        <br>
+
+                        <label name="alt" for="alt" class="linha">Altura: </label>
+                        <input id="alt" type="number" name="alt" class="linha"> m
+
+                        <br>
+
+                        <label name="larg" for="larg" class="linha">Largura: </label>
+                        <input id="larg" type="number" name="larg" class="linha"> m
+
+                        <br>
+
+                        <label name="peso" for="peso" class="linha">Peso Aproximado: </label>
+                        <input type="number" id="peso" name="peso" class="linha"> kg
+
+                        <br>
+
+                        <label name="material" for="material" class="linha">Material do Móvel: </label>
+                        <input id="material" type="text" name="material" class="linha">
+
+                        <br>
+
+                        <input type="checkbox" name="termo" value="true" id="termo">
+                        <label>Eu confirmo que todas as informações acima são verdadeiras.</label>
+                    </fieldset>
+
+                    <div class="adicionar">
+                        <button id="add" type="button">+ Adicinar outro móvel</button>
+                    </div>    
+                    
+                </fieldset>
+
+                <div class="divDoBotao">
+                    <button type="submit" value="enviar">Enviar</button>
+                </div>
+                
+            </form>
+        </main>
+        <footer>
+            <p>CareMóveis &copy;</p>
+        </footer>
+
+        <script type="text/javascript">
+            //Adicionar a função de adicionar um movel no evento de click do botão (Eu adicionei um id ao botão)
+            var button = document.querySelector("#add").addEventListener("click", adicionarMovel)
+            //Contador para alterar os nomes e ids dos campos 
+            let contador = 0;
+            
+            function adicionarMovel() {
+                //Incremento do contador
+                contador++;
+                //Criação de um novo elemento do tipo fieldset (baseado no seu código)
+                let novoMovel = document.createElement("fieldset");
+                //Adicionar o conteúdo do fieldset com o método innerHTML (eu só adicionei a categoria, porem você pode adicionar tudo)
+                novoMovel.innerHTML = `
+                    <label name="categ${contador}" for="categ${contador}" style="display: inline-block">Categoria: </label>
+                    <input id="categ${contador}" type="text"style="display: inline-block">
+
+                    <br style="display: block;">
+
+                    <label name="alt" for="alt" style="display: inline-block">Altura: </label>
+                    <input id="alt" type="number" style="display: inline-block"> m
+
+                    <br style="display: block;">
+
+                    <label name="larg" for="larg" style="display: inline-block">Largura: </label>
+                    <input id="larg" type="number" style="display: inline-block"> m
+
+                    <br style="display: block;">
+
+                    <label name="peso" for="peso" style="display: inline-block">Peso Aproximado: </label>
+                    <input type="number" id="peso" style="display: inline-block"> kg
+
+                    <br style="display: block;">
+
+                    <label name="material" for="material" style="display: inline-block">Material do Móvel: </label>
+                    <input id="material" type="text" style="display: inline-block">
+
+                    <br style="display: block;">
+
+                    <input type="checkbox" name="termo" value="true" id="termo">
+                    <label>Eu confirmo que todas as informações acima são verdadeis.</label>
+                `;
+
+                //Buscando o elemento pai que armazena todos os blocos de moveis.
+                let elementoPai = document.getElementById("moveis");
+
+                //Buscando dentro do elemento pai o penultimo elemento, pois o ultimo é o botão.
+                let elementoReferencia = elementoPai.children[elementoPai.children.length - 1];
+
+                //Adiciona o novo elemento abaixo do elemento de referencia, ou seja, acima do botão.
+                elementoPai.insertBefore(novoMovel, elementoReferencia);
+
+                //Buscando o elemento pai que armazena todos os blocos de moveis (adicionei um id ao elemento pai)
+                //document.getElementById("moveis").appendChild(novoMovel);
+                
+                /* 
+                // No código de cima o elemento e adicionado abaixo do botão, por que o botão está dentro do fildset pai, 
+                //para adiconar acima do botão basta usar o código a seguir e comentar a ultima linha acima.
+
+                //Buscando o elemento pai que armazena todos os blocos de moveis.
+                let elementoPai = document.getElementById("moveis");
+                //Buscando dentro do elemento pai o penultimo elemento, pois o ultimo é o botão.
+                let elementoReferencia = elementoPai.children[elementoPai.children.length - 1];
+                //Adiciona o novo elemento abaixo do elemento de referencia, ou seja, acima do botão.
+                elementoPai.insertBefore(novoMovel, elementoReferencia); */
+
+                //Qualquer dúvida estou a disposição e respondo assim que possivel
+                //Algumas dicas ao seu código: 
+                //Separe o css e javascript em arquivo separado, pois a longo prazo pode se tornar um grande problema
+                //Pesquise framework e bibliotecas para usar, vão facilitar muito seu trabalho
+            }
+        </script>
+    </body>
+</html>

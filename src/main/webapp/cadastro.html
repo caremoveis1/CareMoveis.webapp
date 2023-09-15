@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Cadastro</title>
+      <link rel="stylesheet" href="css/cadastro.css">
+   </head>
+   
+   <body>
+		<header>
+			<h1>CareMóveis</h1>
+		</header>
+		<main>
+			<form action="cadastro" method="post" class="formulario">
+				<div class="tabs">
+					<div class="tab active">Cliente</div>
+					<div class="tab">Motorista</div>
+	
+					<div id="fisica" class="form active">
+						
+						<fieldset>
+							<legend>Dados Pessoais</legend>
+							
+							<label for="nome" name="nome">Nome completo:</label>
+							<input type="text" id="nome" name="nome">
+							
+							<br><br>
+							
+							<label for="cpf" name="cpf">CPF:</label>
+							<input type="text" id="cpf" name="cpf">
+							
+							<br><br>
+	
+							<label for="tel" name="tel">Telefone:</label>
+							<input type="tel" id="tel" name="tel" placeholder="+55 (DDD) 9 0000-0000">
+							<!-- 					
+							<label for="ddd">Selecione um DDD:</label>
+							<select id="ddd" name="ddd">
+								<option value="11">11 - São Paulo</option>
+								<option value="12">14 - Bauru - SP</option>
+								<option value="15">15 - Sorocaba - SP</option>
+								<option value="17">17 - São José do Rio Preto - SP</option>
+							</select> -->
+							<br>
+						</fieldset>
+					
+						<br>
+	
+						<fieldset>
+							<legend>Dados de Acesso</legend>
+							
+							<label for="email" name="email">E-mail:</label>
+							<input type="email" id="email" name="email">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+							<br><br>   
+							
+							<label for="senha">Senha:</label>
+							<input id= "senha" type="password" name="senha">
+							
+							<br><br>
+						
+							<label for="confirmar_senha">Confirmar Senha:</label>
+							<input type="password" id="confirmar_senha" name="confirmar_senha">
+						</fieldset>
+					</div>
+
+					<div id="juridica" class="form">
+				
+						<fieldset>
+						
+							<legend>Dados Pessoais</legend>
+							
+							<label for="nomeMoto" name="nomeMoto">Nome completo:</label>
+							<input type="text" id="nomeMoto" name="nomeMoto"><br><br>
+							
+							<label for="cpfMoto" name="cpfMoto">CPF:</label>
+							<input type="text" id="cpfMoto" name="cpfMoto"><br><br>
+		
+							<label for="telMoto" name="telMoto">Telefone:</label>
+							<input type="tel" id="telMoto" name="telMoto" placeholder="+55 (DDD) 9 0000-0000">
+							
+							<!-- <label for="ddd">Selecione um DDD:</label>
+							<select id="ddd" name="ddd">
+								<option value="11">11 - São Paulo</option>
+								<option value="12">14 - Bauru - SP</option>
+								<option value="15">15 - Sorocaba - SP</option>
+								<option value="17">17 - São José do Rio Preto - SP</option>
+							</select> -->
+							<br>
+						</fieldset>
+		
+		
+						<br>
+		
+						<fieldset>
+							<legend>Dados de Acesso</legend>
+							
+							<label for="emailMoto" name="emailMoto">E-mail:</label>
+							<input id="emailMoto" type="email" name="emailMoto"/> 
+							<!-- type é o tipo que vai ser a caixa de entrada -->
+							
+							<br> <br>   
+							
+							<label for="senhaMoto" name="senhaMoto">Senha:</label>
+							<input id="senhaMoto" type="password" name="senhaMoto"/>
+							
+							<br><br>
+						
+							<label for="confirmar_senhaMoto" name="confirmar_senhaMoto">Confirmar Senha:</label>
+							<input type="password" id="confirmar_senhaMoto" name="confirmar_senhaMoto">
+						</fieldset>
+		
+						<br>
+		
+						<fieldset>
+							<legend>Dados Bancários</legend>
+							
+							<label for="numero_conta" name="numero_conta">Número da Conta:</label>
+							<input type="text" id="numero_conta" name="numero_conta">
+							
+							<br><br>
+		
+							<label for="agencia" name="agencia">Agência:</label>
+							<input type="text" id="agencia" name="agencia">
+							
+							<br><br>
+		
+							<label for="nome_titular" name="nome_titular">Nome do Titular:</label>
+							<input type="text" id="nome_titular" name="nome_titular">
+							
+							<br><br>
+		
+							<label for="cpf_titular" name="cpf_titular">CPF do Titular:</label>
+							<input type="text" id="cpf_titular" name="cpf_titular" placeholder="xxx.xxx.xxx-xx">
+		
+						</fieldset>
+						
+						<br>
+		
+						<fieldset>
+							<legend>Dados da CNH</legend>
+		
+							<label for="numero_cnh" name="numero_cnh">Número da CNH:</label>
+							<input type="text" id="numero_cnh" name="numero_cnh">
+							
+							<br><br>
+		
+							<label for="categoria_cnh" name="categoria_cnh">Categoria da CNH:</label>
+							<select id="categoria_cnh" name="categoria_cnh">
+								<option value="A">ACC</option>
+								<option value="B">A</option>
+								<option value="C">A1</option>
+								<option value="D">B</option>
+								<option value="E">B1</option>
+								<option value="E">C</option>
+								<option value="E">C1</option>
+								<option value="A">D</option>
+								<option value="B">D1</option>
+								<option value="C">BE</option>
+								<option value="D">CE</option>
+								<option value="E">C1E</option>
+								<option value="E">DE</option>
+								<option value="E">D1E</option>
+							</select>
+		
+							<br><br>
+							
+							<label for="data_emissao_cnh" name="data_emissao_cnh">Data de Emissão da CNH:</label>
+							<input type="date" id="data_emissao_cnh" name="data_emissao_cnh">
+							
+							<br><br>
+							
+							<label for="data_validade_cnh" NAME="data_validade_cnh">Data de Validade da CNH:</label>
+							<input type="date" id="data_validade_cnh" name="data_validade_cnh">
+		
+							<!-- <input type="" id="anexo" name="anexo" required>
+							<label for="anexo" name="anexo">Anexe sua CNH (frente e verso).</label> -->
+						</fieldset>
+						
+						<br>
+		
+						<fieldset>
+							<legend>Dados do Caminhão</legend>
+		
+							<label for="marca_caminhao" name="marca_caminhao">Marca do Caminhão:</label>
+							<input type="text" id="marca_caminhao" name="marca_caminhao" required>
+							
+							<br><br>
+		
+							<label for="modelo_caminhao" name="modelo_caminhao">Modelo do Caminhão:</label>
+							<input type="number" id="modelo_caminhao" name="modelo_caminhao" required>
+							
+							<br><br>	
+		
+							<label for="ano_caminhao" name="ano_caminhao" class="chassi_ano">Ano do Caminhão:</label>
+							<input type="text" id="ano_caminhao" name="ano_caminhao" class="chassi_ano" required>
+							
+							<br><br>
+		
+							<label for="placa_camihao" name="placa_camihao" class="chassi_ano">Placa do Caminhão:</label>
+							<input type="text" id="placa_camihao" name="placa_camihao" class="chassi_ano" required>
+		
+							<br><br>
+							
+							<label for="chassi" name="chassi" class="chassi_ano">Chassi:</label>
+							<input type="number" id="chassi" name="chassi" required>
+							
+							<br><br>
+						</fieldset>
+		
+						</div>
+						<button type="submit" class="botao" value="Enviar">Enviar</button>
+						</div>
+					</div>	
+				</div>	
+			</form>
+		</main>
+		
+		<footer>
+			<p>CareMóveis &copy;</p>
+		</footer>
+	  
+		<script>
+			var tabs = document.querySelectorAll(".tab");
+			tabs[0].addEventListener("click", function(event) {
+				selecionarTab(event, 'fisica');
+			})
+			tabs[1].addEventListener("click", function(event) {
+				selecionarTab(event, 'juridica');
+			})
+			
+			function selecionarTab(event, tabId) {
+				let i, tabContent, tabLinks;
+			
+				tabContent = document.getElementsByClassName("form");
+				for (i = 0; i < tabContent.length; i++) {
+					
+					tabContent[i].classList.remove("active");
+				}
+				
+				tabLinks = document.getElementsByClassName("tab");
+				for (i = 0; i < tabLinks.length; i++) {
+			
+					
+					tabLinks[i].classList.remove("active");
+				}
+				
+				document.getElementById(tabId).classList.add("active");
+				
+				event.currentTarget.classList.add("active");
+			}
+		</script>
+	  
+	</body>
+</html>

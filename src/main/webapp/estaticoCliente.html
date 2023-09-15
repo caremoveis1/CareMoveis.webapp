@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estaticoCliente.css">
+  <title>Cliente</title>
+</head>
+
+<body>
+  <header>
+    <h1>O que posso entregar com a CareMoveis?</h1>
+    <div class="botoes">
+      <button>Login</button>
+      <button>Cadastro</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- <div class="caixa" id="box1">
+    </div> -->
+    <div>
+
+      <div class="caixa" id="box1">
+        <img src="imagens/moveisAzuis.png" alt="Imagem de um caminhão">
+      </div>
+      <div class="caixa" style="display: none;" id="box2">
+        <img src="imagens/cozinhaAzul.png" alt="Após o seu cadastro, sera enviado uma confirmação de contratação">
+        </p>
+      </div>
+
+    </div>
+
+    <div class="caixa">
+     <p>
+      Com a CareMoveis você pode levar seus móveis e eletrodomésticos para onde quiser.
+     </p>
+    </div>
+    <div>
+
+      <div class="caixa">
+        <p>Faça o seu pedido após se cadastrar! Será enviado uma confirmação de login e é só realizar seus pedidos de transporte.
+        </p>
+      </div>
+    </div>
+
+  </main>
+  <footer>
+    <p>CareMóveis &copy;</p>
+  </footer>
+
+  <script>
+
+    document.querySelector("#box1").addEventListener("mouseover", mudarBox)
+    document.querySelector("#box2").addEventListener("mouseout", voltarBox)
+    
+
+    function mudarBox(){
+        this.style.display = "none"
+        document.querySelector("#box2").style.display = "block"
+    }
+    function voltarBox(e){
+        this.style.display = "none"
+        document.querySelector("#box1").style.display = "block"
+    }
+    
+</script>
+</body>
+
+</html>

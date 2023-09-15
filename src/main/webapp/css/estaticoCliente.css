@@ -1,0 +1,87 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.caixa {
+  width: 420px;
+  height: 450px;
+  padding: 20px;
+  margin: 1%;
+  background-color: #d69f7e;
+  border: 2px solid #3c0000;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #888888;
+  float: left;
+  box-sizing: border-box;
+}
+
+img {
+  width: 380px;
+  height: 300px;
+}
+
+p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+button {
+  background-color: #4285F4;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 5px 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: #357ABD;
+}
+
+button:hover {
+  background-color: #357ABD;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+button{
+  padding: 10px;  
+  border-radius: 10px;
+  border: none; 
+  cursor: pointer; 
+  font-size: 15px;
+  text-align: center;
+  background-color: #255f85;    
+}
+header{
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #d69f7e;
+  padding: 15px;
+}
+footer{
+  border: 2px solid #3c0000;
+ background-color: #3c0000;
+}
+body{
+  background-color: #255f85;
+}
